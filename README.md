@@ -1,1 +1,3 @@
-# IS2_2324
+# Ingeniería de Software II
+
+**Alumno:** López López Pedro Antonio
