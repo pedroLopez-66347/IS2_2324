@@ -8,6 +8,15 @@
     <artifactId>FranquiciasUCDAO</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!---Dependencia agregadas al pom.xml-->
+    <dependencies>
+        <dependency>
+            <groupId>es.unican.is2</groupId>
+            <artifactId>FranquiciasUCCommon</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
