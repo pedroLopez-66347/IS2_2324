@@ -25,7 +25,24 @@ public class Empleado {
 	 * @param categoria
 	 * @param fechaContratacion
 	 */
-	public Empleado(String DNI, String nombre, Categoria categoria, LocalDate fechaContratacion) {
+	public Empleado(String DNI, String nombre, Categoria categoria, LocalDate fechaContratacion) throws DatoNoValidoException{
+
+		//Verificamos que cada atributo sea correcto al asignarlo a través del constructor, en caso
+		//contrario, lanzamos la exepcion DatoNoValidoException.
+
+		if(this.DNI == null || this.DNI.isBlank()){
+			throw new DatoNoValidoException("DNI no valido");
+		}
+		if(this.nombre == null || nombre.isBlank()){
+			throw new DatoNoValidoException("Nombre no valido");
+		}
+		if(this.categoria == null){
+			throw new DatoNoValidoException("Categoria no valida");
+		}
+		if(this.fechaContratacion == null || LocalDate.now().isBefore(fechaContratacion)){
+			throw new DatoNoValidoException("La fecha de contratación no es valida");
+		}
+
 		this.nombre = nombre;
 		this.DNI=DNI;
 		this.categoria=categoria;
@@ -54,13 +71,13 @@ public class Empleado {
 		}
 
 		//Calculamos el complemento por antiguedad
-		LocalDate hoy = LocalDate.now();
+		LocalDate fechaActual = LocalDate.now();
 
-		if (fechaContratacion.plusYears(20).isBefore(hoy)) {
+		if (fechaContratacion.plusYears(20).isBefore(fechaActual)) {
 			complemento = 200;
-		} else if (fechaContratacion.plusYears(10).isBefore(hoy)) {
+		} else if (fechaContratacion.plusYears(10).isBefore(fechaActual)) {
 			complemento = 100;
-		} else if (fechaContratacion.plusYears(5).isBefore(hoy)){
+		} else if (fechaContratacion.plusYears(5).isBefore(fechaActual)){
 			complemento = 50;
 		}
 
