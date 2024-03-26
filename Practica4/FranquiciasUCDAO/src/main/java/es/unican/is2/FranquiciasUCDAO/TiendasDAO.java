@@ -1,4 +1,6 @@
+package es.unican.is2.FranquiciasUCDAO;
 
+import es.unican.is2.FranquiciasUCCommon.*;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -70,7 +72,7 @@ public class TiendasDAO implements ITiendasDAO {
 			}
 			statement.close(); 
 		} catch (SQLException e) {
-			System.out.println(e);
+			//System.out.println(e);
 			throw new DataAccessException();
 		}
 

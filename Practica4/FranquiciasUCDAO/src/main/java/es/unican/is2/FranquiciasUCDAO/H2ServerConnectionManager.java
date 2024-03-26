@@ -1,4 +1,6 @@
+package es.unican.is2.FranquiciasUCDAO;
 
+import es.unican.is2.FranquiciasUCCommon.*;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

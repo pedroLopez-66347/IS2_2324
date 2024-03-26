@@ -1,3 +1,8 @@
+package es.unican.is2.FranquiciasUCMain;
+
+import es.unican.is2.FranquiciasUCBusiness.*;
+import es.unican.is2.FranquiciasUCDAO.*;
+import es.unican.is2.FranquiciasUCGUI.*;
 
 /**
  * Clase principal que construye la aplicaci�n de tres capas y lanza su ejecuci�n

@@ -1,3 +1,7 @@
+package es.unican.is2.FranquiciasUCBusiness;
+
+import es.unican.is2.FranquiciasUCCommon.*;
+
 public class GestionTiendas implements IGestionTiendas {
 
     private ITiendasDAO tiendasDAO;

@@ -25,7 +25,15 @@ public class Tienda implements Serializable {
 	 * @param nombre Nombre de la tienda
 	 * @param direccion Direccion de la tienda
 	 */
-	public Tienda(String nombre, String direccion) {
+	public Tienda(String nombre, String direccion) throws DatoNoValidoException{
+
+		if(nombre == null || nombre.isBlank()){
+			throw new DatoNoValidoException("Nombre invalido");
+		}
+		if(direccion == null || direccion.isBlank()){
+			throw new DatoNoValidoException("Direccion invalida");
+		}
+
 		this.nombre=nombre;
 		this.direccion= direccion;
 	}

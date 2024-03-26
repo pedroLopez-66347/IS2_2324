@@ -1,3 +1,7 @@
+package es.unican.is2.FranquiciasUCBusiness;
+
+import es.unican.is2.FranquiciasUCCommon.*;
+
 import java.time.LocalDate;
 
 public class GestionEmpleados implements IGestionEmpleados {
@@ -27,7 +31,7 @@ public class GestionEmpleados implements IGestionEmpleados {
             empleado.setFechaContratacion(LocalDate.now());
             tiendasDAO.modificarTienda(tienda);
             empleadosDAO.modificarEmpleado(empleado);
-
+            empleadosDAO.crearEmpleado(empleado);
             return empleado;
         }else{
             throw new OperacionNoValidaException("El empleado ya existe");
@@ -52,10 +56,11 @@ public class GestionEmpleados implements IGestionEmpleados {
             empleado.darDeBaja(); //Lo damos de baja
             tiendasDAO.modificarTienda(tienda);
             empleadosDAO.eliminarEmpleado(dni);
+
+            return empleado;
         }else{
             throw new OperacionNoValidaException("El empleado No existe");
         }
-
     }
 
     @Override
