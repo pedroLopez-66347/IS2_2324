@@ -1,4 +1,4 @@
-
+package es.unican.is2.FranquiciasUCCommon;
 
 import java.io.Serializable;
 import java.util.LinkedList;
@@ -55,7 +55,7 @@ public class Tienda implements Serializable {
 	/**
 	 * Retorna el empleado con el dni indicado
 	 * @param dni DNI del empleado
-	 * @return Empleado con ese dni
+	 * @return es.unican.is2.FranquiciasUCCommon.Empleado con ese dni
 	 *         null si no existe
 	 */
 	public Empleado buscaEmpleado(String dni) {

@@ -1,8 +1,8 @@
-
+package es.unican.is2.FranquiciasUCCommon;
 
 
 /**
- * Interfaz de negocio para la gestión de altas y bajas medicas
+ * Interfaz de negocio para la gestiï¿½n de altas y bajas medicas
  */
 public interface IGestionAltasBajas {
 

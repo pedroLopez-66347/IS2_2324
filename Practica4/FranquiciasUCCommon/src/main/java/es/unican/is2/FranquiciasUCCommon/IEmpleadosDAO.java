@@ -1,4 +1,4 @@
-
+package es.unican.is2.FranquiciasUCCommon;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ public interface IEmpleadosDAO {
 
 	/**
 	 * Persite un nuevo empleado
-	 * @param e Empleado a anhadir
+	 * @param e es.unican.is2.FranquiciasUCCommon.Empleado a anhadir
 	 * @return El empleado una vez anhadido 
 	 *         null si ya existe un empleado con el mismo dni
 	 * @throws DataAccessException Si hay un error en el acceso a los datos
@@ -27,8 +27,8 @@ public interface IEmpleadosDAO {
 
 	/**
 	 * Actualiza el estado del empleado
-	 * @param nuevo Empleado actualizado
-	 * @return Empleado actualizado 
+	 * @param nuevo es.unican.is2.FranquiciasUCCommon.Empleado actualizado
+	 * @return es.unican.is2.FranquiciasUCCommon.Empleado actualizado
 	 *         null si no existe
 	 * @throws DataAccessException Si hay un error en el acceso a los datos
 	 */

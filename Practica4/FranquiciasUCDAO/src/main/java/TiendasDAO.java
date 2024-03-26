@@ -70,7 +70,7 @@ public class TiendasDAO implements ITiendasDAO {
 			}
 			statement.close(); 
 		} catch (SQLException e) {
-			// System.out.println(e);
+			System.out.println(e);
 			throw new DataAccessException();
 		}
 

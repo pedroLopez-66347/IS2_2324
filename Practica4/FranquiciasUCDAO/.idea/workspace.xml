@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4604a03b-8fca-4cda-b0db-5032eb4fbe82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../FranquiciasUCBusiness/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FranquiciasUCGUI/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FranquiciasUCMain/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FranquiciasUCBusiness/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCBusiness/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica3/FranquiciasUCDAO/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica3/FranquiciasUCDAO/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica3/FranquiciasUCDAO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica3/FranquiciasUCDAO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCBusiness/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCBusiness/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/DataAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/DataAccessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/IEmpleadosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/IEmpleadosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/IGestionAltasBajas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/IGestionAltasBajas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/IGestionEmpleados.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/IGestionEmpleados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/IGestionTiendas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/IGestionTiendas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/ITiendasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/ITiendasDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/OperacionNoValidaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/OperacionNoValidaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/Tienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FranquiciasUCGUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCGUI/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FranquiciasUCMain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCMain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/H2ServerConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/H2ServerConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TiendasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TiendasDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCMain/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCMain/src/main/java/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,23 +59,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "practica3",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/peanl/OneDrive/Escritorio/IS2_2324/Practica3/FranquiciasUCDAO",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;practica4&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/peanl/OneDrive/Escritorio/IS2_2324/Practica4/FranquiciasUCMain&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +93,8 @@
       <updated>1710251943362</updated>
       <workItem from="1710251944710" duration="27000" />
       <workItem from="1710255120401" duration="6622000" />
+      <workItem from="1711385847017" duration="998000" />
+      <workItem from="1711387096725" duration="1845000" />
     </task>
     <servers />
   </component>

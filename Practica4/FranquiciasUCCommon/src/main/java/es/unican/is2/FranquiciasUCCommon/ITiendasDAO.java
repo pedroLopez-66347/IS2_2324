@@ -1,4 +1,4 @@
-
+package es.unican.is2.FranquiciasUCCommon;
 
 import java.util.List;
 /**
@@ -8,7 +8,7 @@ public interface ITiendasDAO {
 
 	/**
 	 * Persite una nueva tienda
-	 * @param t Tienda a anhadir
+	 * @param t es.unican.is2.FranquiciasUCCommon.Tienda a anhadir
 	 * @return La tienda anhadida 
 	 *         null si ya existe una tienda con el mismo  id
 	 * @throws DataAccessException Si hay un error en el acceso a los datos
@@ -16,7 +16,7 @@ public interface ITiendasDAO {
 	public Tienda crearTienda(Tienda t) throws DataAccessException;
 
 	/**
-	 * Retorna la tienda cuyo id se pasa por parámetro
+	 * Retorna la tienda cuyo id se pasa por parï¿½metro
 	 * @param id Id de la tienda
 	 * @return La tienda buscada 
 	 *         null si no se encuentra
@@ -25,7 +25,7 @@ public interface ITiendasDAO {
 	public Tienda tienda(long id) throws DataAccessException;
 
 	/**
-	 * Retorna la tienda cuyo nombre se pasa por parámetro
+	 * Retorna la tienda cuyo nombre se pasa por parï¿½metro
 	 * @param nombre Nombre de la tienda
 	 * @return La tienda buscada 
 	 *         null si no se encuentra
@@ -35,8 +35,8 @@ public interface ITiendasDAO {
 
 	/**
 	 * Actualiza el estado de la tienda
-	 * @param nuevo Tienda actualizada
-	 * @return Tienda actualizada 
+	 * @param nuevo es.unican.is2.FranquiciasUCCommon.Tienda actualizada
+	 * @return es.unican.is2.FranquiciasUCCommon.Tienda actualizada
 	 *         null si no existe una tienda con el mismo id
 	 * @throws DataAccessException Si hay un error en el acceso a los datos
 	 */
@@ -45,7 +45,7 @@ public interface ITiendasDAO {
 	/**
 	 * Elimina una tienda
 	 * @param id Id de la tienda a eliminar
-	 * @return Tienda eliminada
+	 * @return es.unican.is2.FranquiciasUCCommon.Tienda eliminada
 	 *         null si no se encuentra la tienda
 	 * @throws DataAccessException Si hay un error en el acceso a los datos
 	 */

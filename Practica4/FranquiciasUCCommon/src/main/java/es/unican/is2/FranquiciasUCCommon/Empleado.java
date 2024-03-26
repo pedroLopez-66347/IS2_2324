@@ -1,4 +1,4 @@
-
+package es.unican.is2.FranquiciasUCCommon;
 
 
 import java.time.LocalDate;
@@ -27,19 +27,17 @@ public class Empleado {
 	 */
 	public Empleado(String DNI, String nombre, Categoria categoria, LocalDate fechaContratacion) throws DatoNoValidoException{
 
-		//Verificamos que cada atributo sea correcto al asignarlo a través del constructor, en caso
-		//contrario, lanzamos la exepcion DatoNoValidoException.
-
-		if(this.DNI == null || this.DNI.isBlank()){
+		// Verificamos que cada atributo sea asignado correctamente a través del constructor
+		if(DNI == null || DNI.isBlank()){
 			throw new DatoNoValidoException("DNI no valido");
 		}
-		if(this.nombre == null || nombre.isBlank()){
+		if(nombre == null || nombre.isBlank()){
 			throw new DatoNoValidoException("Nombre no valido");
 		}
-		if(this.categoria == null){
-			throw new DatoNoValidoException("Categoria no valida");
+		if(categoria == null){
+			throw new DatoNoValidoException("es.unican.is2.FranquiciasUCCommon.Categoria no valida");
 		}
-		if(this.fechaContratacion == null || LocalDate.now().isBefore(fechaContratacion)){
+		if(fechaContratacion == null || LocalDate.now().isBefore(fechaContratacion)){
 			throw new DatoNoValidoException("La fecha de contratación no es valida");
 		}
 
