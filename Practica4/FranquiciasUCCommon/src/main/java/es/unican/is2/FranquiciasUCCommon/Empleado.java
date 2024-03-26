@@ -2,13 +2,15 @@ package es.unican.is2.FranquiciasUCCommon;
 
 
 import java.time.LocalDate;
+import java.util.Objects;
+
 /**
  * Clase que representa un empleado de la franquicia, 
  * con sus datos personales 
  * y su estado en la franquicia (baja y categoria)
  */
 public class Empleado {
-	
+
 	private String DNI;
 	private String nombre;
 	private Categoria categoria;
@@ -165,5 +167,17 @@ public class Empleado {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-	
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Empleado empleado = (Empleado) o;
+		return baja == empleado.baja && Objects.equals(DNI, empleado.DNI) && Objects.equals(nombre, empleado.nombre) && categoria == empleado.categoria && Objects.equals(fechaContratacion, empleado.fechaContratacion);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(DNI, nombre, categoria, fechaContratacion, baja);
+	}
 }
