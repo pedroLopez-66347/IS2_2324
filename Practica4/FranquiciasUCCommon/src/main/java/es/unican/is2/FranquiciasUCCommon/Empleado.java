@@ -37,10 +37,10 @@ public class Empleado {
 			throw new DatoNoValidoException("Nombre no valido");
 		}
 		if(categoria == null){
-			throw new DatoNoValidoException("es.unican.is2.FranquiciasUCCommon.Categoria no valida");
+			throw new DatoNoValidoException("Categoría no valida");
 		}
 		if(fechaContratacion == null || LocalDate.now().isBefore(fechaContratacion)){
-			throw new DatoNoValidoException("La fecha de contratación no es valida");
+			throw new DatoNoValidoException("Fecha de contratación no valida");
 		}
 
 		this.nombre = nombre;

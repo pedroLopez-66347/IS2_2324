@@ -57,10 +57,10 @@ public class EmpleadoTest {
         //Categoria = null
         assertThrows(DatoNoValidoException.class, () -> new Empleado("12345678A", "Manuel", null, LocalDate.now()));
 
-        //fecha
+        //fechaActual < fechaContratacion
         assertThrows(DatoNoValidoException.class, () -> new Empleado("12345678A", "Manuel", Categoria.VENDEDOR, LocalDate.now().plusDays(1)));
 
-        //fecha
+        //fechaActual < fechaContratacion
         assertThrows(DatoNoValidoException.class, () -> new Empleado("12345678A", "Manuel", Categoria.VENDEDOR, LocalDate.now().plusDays(30)));
 
         //fecha = null
@@ -76,83 +76,70 @@ public class EmpleadoTest {
         //==============================================================
         empleado = new Empleado("12345678A", "Pedro", Categoria.ENCARGADO, LocalDate.now());
 
-        //Encargado dado de baja con menos de 5 años de antiguedad
         empleado.setCategoria(Categoria.ENCARGADO);
         empleado.setBaja(true);
         empleado.setFechaContratacion(LocalDate.now());
         assertEquals(1500, empleado.sueldoBruto());
 
-        //Encargado dado de baja con más de 10 años de antiguedad
         empleado.setCategoria(Categoria.ENCARGADO);
         empleado.setBaja(true);
         empleado.setFechaContratacion(LocalDate.now().minusYears(11));
         assertEquals(1575, empleado.sueldoBruto());
 
-        //Encargado dado de alta con más de 5 años de antiguedad
         empleado.setCategoria(Categoria.ENCARGADO);
         empleado.setBaja(false);
         empleado.setFechaContratacion(LocalDate.now().minusYears(6));
         assertEquals(2050, empleado.sueldoBruto());
 
-        //Encargado dado de alta con más de 20 años de antiguedad
         empleado.setCategoria(Categoria.ENCARGADO);
         empleado.darDeAlta();
         empleado.setFechaContratacion(LocalDate.now().minusYears(21));
         assertEquals(2200, empleado.sueldoBruto());
 
-
-
-        //Vendedor dado de baja con más de 5 años de antiguedad
         empleado.setCategoria(Categoria.VENDEDOR);
         empleado.setBaja(true);
         empleado.setFechaContratacion(LocalDate.now().minusYears(7));
         assertEquals(1162.5, empleado.sueldoBruto());
 
-        //Vendedor dado de alta con menos de 5 años de antiguedad
         empleado.setCategoria(Categoria.VENDEDOR);
         empleado.setBaja(false);
         empleado.setFechaContratacion(LocalDate.now().minusYears(1));
         assertEquals(1500, empleado.sueldoBruto());
 
-        //Vendedor dado de alta con más de 10 años de antiguedad
         empleado.setCategoria(Categoria.VENDEDOR);
         empleado.setBaja(false);
         empleado.setFechaContratacion(LocalDate.now().minusYears(15));
         assertEquals(1600, empleado.sueldoBruto());
 
-        //Vendedor dado de baja con más de 20 años de antiguedad
         empleado.setCategoria(Categoria.VENDEDOR);
         empleado.darDeBaja();
         empleado.setFechaContratacion(LocalDate.now().minusYears(30));
         assertEquals(1275, empleado.sueldoBruto());
 
-
-
-        //Auxiliar dado de baja con menos de 5 años de antiguedad
         empleado.setCategoria(Categoria.AUXILIAR);
         empleado.setBaja(true);
         empleado.setFechaContratacion(LocalDate.now().minusYears(5));
         assertEquals(750, empleado.sueldoBruto());
 
-        //Auxiliar dado de alta con menos de 10 años de antiguedad
         empleado.setCategoria(Categoria.AUXILIAR);
         empleado.setBaja(false);
         empleado.setFechaContratacion(LocalDate.now().minusYears(10));
         assertEquals(1050, empleado.sueldoBruto());
 
-        //Auxiliar dado de baja con menos de 20 años de antiguedad
         empleado.setCategoria(Categoria.AUXILIAR);
         empleado.setBaja(true);
         empleado.setFechaContratacion(LocalDate.now().minusYears(20));
         assertEquals(825, empleado.sueldoBruto());
 
+
+        //==============================================================
+        //||               Casos de prueba NO validos                 ||
+        //==============================================================
+
+        //Los casos de prueba no validos ya fueron validados en la creación del objeto
+        //a través del método constructor. En caso de ocurrir algun error se arrojaría
+        //una excepcion la cual ya fue verificada.
+
     }
-
-    //==============================================================
-    //||               Casos de prueba validos (11)               ||
-    //==============================================================
-
-    // No es necesario probar los casos de prueba no validos ya que en el constructor se arrojará
-    // una excepción en caso de que ocurra un error al inicializar los atributos.
 
 }
