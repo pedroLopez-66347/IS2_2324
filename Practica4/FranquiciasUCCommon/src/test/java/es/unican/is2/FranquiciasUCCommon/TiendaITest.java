@@ -25,8 +25,8 @@ public class TiendaITest {
         //==============================================================
         //||            Casos de prueba NO validos (4)                ||
         //==============================================================
-        assertThrows(DatoNoValidoException.class, () -> new Tienda(null, "Callge G"));
-        assertThrows(DatoNoValidoException.class, () -> new Tienda("", "Callge G"));
+        assertThrows(DatoNoValidoException.class, () -> new Tienda(null, "Calle G"));
+        assertThrows(DatoNoValidoException.class, () -> new Tienda("", "Calle G"));
         assertThrows(DatoNoValidoException.class, () -> new Tienda("Tienda G", null));
         assertThrows(DatoNoValidoException.class, () -> new Tienda("Tienda G", ""));
     }
@@ -41,13 +41,10 @@ public class TiendaITest {
         List<Empleado> empleados = tienda.getEmpleados();
 
         //==============================================================
-        //||            Casos de prueba NO validos (1)                ||
+        //||                    Casos de prueba                       ||
         //==============================================================
         assertEquals(0.0, tienda.gastoMensualSueldos());
 
-        //==============================================================
-        //||                 Casos de prueba validos (2)              ||
-        //==============================================================
         empleados.add(empleado1);
         assertEquals(2000, tienda.gastoMensualSueldos());
 

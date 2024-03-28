@@ -40,7 +40,7 @@ public class EmpleadoTest {
 
 
         //==============================================================
-        //||            Casos de prueba NO validos (9)                ||
+        //||            Casos de prueba NO validos (8)                ||
         //==============================================================
         //DNI = null
         assertThrows(DatoNoValidoException.class, () -> new Empleado(null, "Sofia", Categoria.VENDEDOR, LocalDate.now()));
@@ -60,11 +60,15 @@ public class EmpleadoTest {
         //fechaActual < fechaContratacion
         assertThrows(DatoNoValidoException.class, () -> new Empleado("12345678A", "Manuel", Categoria.VENDEDOR, LocalDate.now().plusDays(1)));
 
-        //fechaActual < fechaContratacion
-        assertThrows(DatoNoValidoException.class, () -> new Empleado("12345678A", "Manuel", Categoria.VENDEDOR, LocalDate.now().plusDays(30)));
-
         //fecha = null
         assertThrows(DatoNoValidoException.class, () -> new Empleado("12345678A", "Manuel", Categoria.VENDEDOR, null));
+
+        /*
+          Caso de prueba NO valido cuando se asigna una categoría que no pertenece al enum => != {ENCARGADO, VENDEDOR, AUXILIAR}
+          Este caso no puede implementarse en Java
+
+          assertThrows(DatoNoValidoException.class, () -> new Empleado("12345678A", "Manuel", Categoria.MESERO, LocalDate.now()));
+        */
     }
 
     //Método sueldoBruto()

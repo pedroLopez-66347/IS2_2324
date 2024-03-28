@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4604a03b-8fca-4cda-b0db-5032eb4fbe82" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/main/java/es/unican/is2/FranquiciasUCCommon/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/test/java/es/unican/is2/FranquiciasUCCommon/EmpleadoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/test/java/es/unican/is2/FranquiciasUCCommon/EmpleadoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCCommon/src/test/java/es/unican/is2/FranquiciasUCCommon/TiendaITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCCommon/src/test/java/es/unican/is2/FranquiciasUCCommon/TiendaITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FranquiciasUCGUI/src/main/java/es/unican/is2/FranquiciasUCGUI/VistaGerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCGUI/src/main/java/es/unican/is2/FranquiciasUCGUI/VistaGerente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FranquiciasUCMain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FranquiciasUCMain/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging practica4",
+    "git-widget-placeholder": "practica4",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/peanl/OneDrive/Escritorio/IS2_2324/Practica4/FranquiciasUCMain",
     "node.js.detected.package.eslint": "true",
@@ -78,7 +79,7 @@
       <workItem from="1710255120401" duration="6622000" />
       <workItem from="1711385847017" duration="998000" />
       <workItem from="1711387096725" duration="5393000" />
-      <workItem from="1711476995234" duration="4169000" />
+      <workItem from="1711476995234" duration="4957000" />
     </task>
     <servers />
   </component>

@@ -4,14 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!--- Metadatos -->
     <groupId>es.unican.is2</groupId>
     <artifactId>FranquiciasUCCommon</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <!--- Dependencias -->
+    <!--- JUnit -->
     <dependencies>
-
-        <!--- JUnit -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -20,7 +19,26 @@
         </dependency>
     </dependencies>
 
+    <!--- Ejecución de los Tests -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M8</version>
 
+                <!--- Leer archivos que contengan la terminación Test.java -->
+                <configuration>
+                    <includes>
+                        <include>*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <!--- Version de Java -->
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
